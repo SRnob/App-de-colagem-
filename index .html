@@ -1,0 +1,64 @@
+<html>
+    <head>
+       <title>App de Colagem</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link href="style.css" rel="stylesheet">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+</head>
+ 
+<body>
+    <div class="container">
+    <center>
+        <a href="" id="link" download="minhaFoto.png"></a>
+        <h1>App de Colagem 
+            <img id="logo_img" src="foto do vicente.jpg">
+
+        </h1>
+        <hr>
+        <h4 style="color:red;">Pressione permitir assim que o pop-up for exibido. Depois de dar um comando de voz</h4>
+        
+        <div class="form-group">
+            <h3>Diga "Tire minha selfie"</h3>
+            <label>Sua saída de voz : </label>
+            <textarea class="form-control" id="textBox" readonly="true"></textarea>
+        </div>
+        <button class="btn btn-primary" onclick="start()">Iniciar</button>
+        
+
+        <p>Pressione o botão Iniciar</p>
+
+        <label>Sua webcam : </label>
+        <div id="camera"></div>
+
+        <br>
+
+        <label>Sua selfie vai aparecer aqui: </label>
+            <br>
+            <div id="resultRow">
+                <div id="result1" class="column">
+                    <img style="width: 30%;" src="https://unsplash.com/photos/F3Dde_9thd8/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjQzOTUxMTU0&force=true">
+                </div>
+    
+                <div id="result2" class="column">
+                    <img  style="width: 50%;" src="https://unsplash.com/photos/dozkVhDyvhQ/download?force=true">
+                </div>
+    
+                <div id="result3" class="column">
+                    <img  style="width: 30%;" src="https://unsplash.com/photos/N10auyEVst8/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjQzOTUxMjA2&force=true">
+                </div>
+            </div>
+        </center>
+        <div class="rod">
+           <h5> Desenvolvido por - Vicente</h5>
+        </div>
+
+    
+        <script src="main.js"></script>
+    </body>
+    
+    </html>
